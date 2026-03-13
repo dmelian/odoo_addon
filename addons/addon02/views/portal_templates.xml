@@ -1,0 +1,13 @@
+<odoo>
+    <!-- 1. Tarjeta en /my/home -->
+    <template id="portal_my_home_addon02" inherit_id="portal.portal_my_home">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Portal mínimo</t>
+                <t t-set="url" t-value="'/my/addon02'"/>
+                <t t-set="placeholder_count" t-value="'addon02_count'"/>
+                <t t-set="count" t-value="addon02_count"/>
+            </t>
+        </xpath>
+    </template>
+</odoo>
